@@ -1,0 +1,1 @@
+Quanto mais vezes se clica no aumentar ou no diminuir, o cubo rodará mais rápido e mais lento.
