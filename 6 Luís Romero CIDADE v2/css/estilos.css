@@ -1,0 +1,172 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #07111f, #1e293b);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  text-align: center;
+  height: 1000px;
+}
+
+.palco {
+  width: 700px;
+  height: 450px;
+  display: grid;
+  place-items: center;
+  perspective: 900px;
+}
+
+.cidade {
+  position: relative;
+  width: 800px;
+  height: 350px;
+  transform-style: preserve-3d;
+  transform: rotateX(-25deg) rotateY(25deg);
+  transition: transform 0.35s;
+}
+
+.chao {
+  position: absolute;
+  width: 800px;
+  height: 400px;
+  background: #475569;
+  transform: rotateX(90deg) translateZ(-100px);
+  border: 3px solid #64748b;
+}
+
+.estrada {
+  position: absolute;
+  top: 145px;
+  width: 100%;
+  height: 80px;
+  background: #1f2937;
+  border-top: 3px dashed #f8fafc;
+  border-bottom: 3px dashed #f8fafc;
+}
+
+.predio {
+  position: absolute;
+  transform-style: preserve-3d;
+  width: 100px;
+}
+
+.predio .frente,
+.predio .lado,
+.predio .topo {
+  position: absolute;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.predio .frente {
+  width: 100px;
+  height: 160px;
+  display: grid;
+  place-items: center;
+  background: #0284c7;
+  transform: translateZ(50px);
+  font-weight: bold;
+  line-height: 2;
+}
+
+.predio .lado {
+  width: 100px;
+  height: 160px;
+  background: #0369a1;
+  transform: rotateY(-90deg) translateZ(50px);
+}
+
+.predio .topo {
+  width: 100px;
+  height: 100px;
+  background: #f34d01;
+  transform: rotateX(90deg) translateZ(50px);
+}
+
+.p1 {
+  left: 70px;
+  top: 60px;
+}
+
+.p2 {
+  left: 210px;
+  top: 10px;
+  transform: scaleY(1.25);
+}
+
+.p3 {
+  left: 370px;
+  top: 100px;
+  transform: scaleY(0.8);
+}
+
+.p4 {
+  left: 490px;
+  top: 45px;
+}
+
+.p2 .frente {
+  background: #7c3aed;
+}
+
+.p2 .lado {
+  background: #6d28d9;
+}
+
+.p2 .topo {
+  background: #f34d01;
+}
+
+.p3 .frente {
+  background: lch(85.19% 85.93 88.91);
+}
+
+.p3 .lado {
+  background: lch(85.19% 85.93 88.91);
+}
+
+.p3 .topo {
+  background: #f34d01;
+}
+
+.p4 .frente {
+  background: #e11d48;
+}
+
+.p4 .lado {
+  background: #be123c;
+}
+
+.p4 .topo {
+  background: #f34d01;
+}
+
+.controlos {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.controlos button {
+  margin-top: 80px;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.controlos button:hover {
+  transform: scale(1.06);
+}
