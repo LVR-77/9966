@@ -1,0 +1,85 @@
+/*estilo do meu botão */
+
+body {
+    margin-top: 100px;
+    background-color: rgb(29, 29, 29);
+    color: rgb(0, 95, 219);
+    margin-bottom: 100px;
+    font-family: calibri;
+}
+
+button {
+    background-color: darkgrey;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightgrey;
+    color: black;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+h1 {
+    color: rgb(223, 2, 2);
+    font-size: 50px;
+}
+.meuh1 {
+    color: rgb(248, 0, 248);
+    font-size: 20px;    
+    text-align: center;
+}
+header {  
+    /* Colocar o header no topo */
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    border-radius: 200px;
+
+
+    /* alinhar o selementos*/
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 40, 172);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+  /* Colocar o footer no fundo */
+  
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    border-radius: 200px;
+   
+
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 40, 172);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
